@@ -1,3 +1,5 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
@@ -85,9 +87,7 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Diagnostics
-keymap.set("n", "<C-d>", function()
-  vim.diagnostic.goto_next()
-end, opts)
+keymap.set("n", "<C-d>", function() vim.diagnostic.goto_next() end, opts)
 
 keymap.set("n", "<leader>r", ":Jaq quickfix<Return>")
 

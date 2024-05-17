@@ -1,8 +1,10 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- vim.g.mapleader = " "
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
-vim.opt.fileencoding = "sjis"
-vim.opt.fileencodings = "iso-2022-jp,euc-jp,sjis,utf-8"
+vim.opt.fileencoding = "utf-8"
+vim.opt.fileencodings = "iso-2022-jp,sjis,euc-jp,utf-8"
+vim.opt.fileformats = "unix,dos,mac"
 
 vim.opt.title = true
 vim.opt.smartindent = true
@@ -38,9 +40,6 @@ vim.cmd [[let &t_Ce = "\e[4:0m"]]
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { "r" }
 
-vim.cmd [[au BufNewFile,BufRead *.astro setf astro]]
-vim.cmd [[au BufNewFile,BufRead Podfile setf ruby]]
-
 vim.cmd "let g:netrw_liststyle = 3"
 
 -- line numbers
@@ -68,7 +67,6 @@ vim.opt.cursorline = true -- highlight the current cursor line
 -- turn on termguicolors for nightfly colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 vim.opt.termguicolors = true
-vim.opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 vim.opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- clipboard
