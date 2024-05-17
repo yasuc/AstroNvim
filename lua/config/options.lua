@@ -19,7 +19,7 @@ vim.opt.scrolloff = 10
 if vim.fn.executable "cmd" == 1 then
   vim.o.shell = "cmd"
 else
-  vim.opt.shell = "fish"
+  vim.opt.shell = "zsh"
 end
 
 -- vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
