@@ -1,7 +1,7 @@
 -- Markdown preview
 return {
   "iamcco/markdown-preview.nvim",
-  -- cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+  cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
   keys = {
     {
       "<leader>mp",
@@ -10,5 +10,6 @@ return {
       desc = "Markdown Preview",
     },
   },
-  -- config = function() vim.cmd [[do FileType]] end,
+  build = function() vim.fn["mkdp#util#install"]() end,
+  config = function() vim.cmd [[do FileType]] end,
 }

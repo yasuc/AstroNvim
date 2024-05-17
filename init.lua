@@ -32,7 +32,7 @@ elseif vim.fn.has "win64" == 1 then
 else
   vim.cmd [[
   function OpenMarkdownPreview (url)
-  execute "silent ! chrome --new-window --app=" . a:url
+  execute "silent ! google-chrome --new-window --app=" . a:url
   endfunction
 ]]
 end
