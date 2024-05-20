@@ -4,6 +4,20 @@ return {
   {
     "folke/noice.nvim",
     event = "VeryLazy",
+
+    config = function()
+      require("noice").setup {
+        lsp = {
+          hover = {
+            enabled = false,
+          },
+          signature = {
+            enabled = false,
+          },
+        },
+      }
+    end,
+
     opts = {
       presets = {
         bottom_search = true,
