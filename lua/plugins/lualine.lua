@@ -1,5 +1,42 @@
+-- statusline
+-- local lsp_names = function()
+--   local clients = {}
+--   for _, client in ipairs(vim.lsp.get_active_clients { bufnr = 0 }) do
+--     if client.name == "null-ls" then
+--       local sources = {}
+--       for _, source in ipairs(require("null-ls.sources").get_available(vim.bo.filetype)) do
+--         table.insert(sources, source.name)
+--       end
+--       table.insert(clients, "null-ls(" .. table.concat(sources, ", ") .. ")")
+--     else
+--       table.insert(clients, client.name)
+--     end
+--   end
+--   return " " .. table.concat(clients, ", ")
+-- end
+local lsp_names = function()
+  local clients = vim
+    .iter(vim.lsp.get_active_clients { bufnr = 0 })
+    :map(function(client)
+      if client.name == "null-ls" then
+        return ("null-ls(%s)"):format(
+          table.concat(
+            vim
+              .iter(require("null-ls.sources").get_available(vim.bo.filetype))
+              :map(function(source) return source.name end)
+              :totable(),
+            ", "
+          )
+        )
+      else
+        return client.name
+      end
+    end)
+    :totable()
+  return " " .. table.concat(clients, ", ")
+end
+
 return {
-  -- statusline
   {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
@@ -48,15 +85,11 @@ return {
           },
           lualine_x = {
             -- stylua: ignore
-						{
-							function()
-								return require("noice").api.status.command.get()
-							end,
-							cond = function()
-								return package.loaded["noice"] and require("noice").api.status.command.has()
-							end,
-							-- color = LazyVim.ui.fg("Statement"),
-						},
+            {
+              function() return require("noice").api.status.command.get() end,
+              cond = function() return package.loaded["noice"] and require("noice").api.status.command.has() end,
+              -- color = LazyVim.ui.fg("Statement"),
+            },
             -- stylua: ignore
             {
               function() return require("noice").api.status.mode.get() end,
@@ -74,6 +107,7 @@ return {
               cond = require("lazy.status").has_updates,
               -- color = LazyVim.ui.fg("Special"),
             },
+            lsp_names,
             { "encoding" },
             { "fileformat" },
             -- { "filetype" },
