@@ -20,9 +20,6 @@ local keymap = vim.keymap -- for conciseness
 
 -- General Keymaps -------------------
 
--- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
@@ -38,12 +35,12 @@ keymap.set("n", "<leader>ms", ":e ++enc=sjis<Return>", { desc = "convert to sjis
 keymap.set("i", "jk", "<ESC>", opts)
 
 -- insert mode での移動
-keymap.set("i", "<C-e>", "<END>", opts)
-keymap.set("i", "<C-a>", "<HOME>", opts)
-keymap.set("i", "<C-n>", "<Down>", opts)
-keymap.set("i", "<C-p>", "<Up>", opts)
-keymap.set("i", "<C-b>", "<Left>", opts)
-keymap.set("i", "<C-f>", "<Right>", opts)
+keymap.set("i", "<C-E>", "<END>", opts)
+keymap.set("i", "<C-A>", "<HOME>", opts)
+keymap.set("i", "<C-N>", "<Down>", opts)
+keymap.set("i", "<C-P>", "<Up>", opts)
+keymap.set("i", "<C-B>", "<Left>", opts)
+keymap.set("i", "<C-F>", "<Right>", opts)
 
 -- Telescope-file-browser
 keymap.set("n", ",ff", ":Telescope find_files<Return>", opts)
