@@ -27,7 +27,11 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- ESC*2 でハイライトやめる
-keymap.set("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", opts)
+keymap.set("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", { desc = "Stop highlight" })
+
+-- 文字コードの変更
+keymap.set("n", "<leader>mu", ":e ++enc=utf-8<Return>", { desc = "convert to utf-8" })
+keymap.set("n", "<leader>ms", ":e ++enc=sjis<Return>", { desc = "convert to sjis" })
 
 -- Insert --
 -- Press jk fast to exit insert mode

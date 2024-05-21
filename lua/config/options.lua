@@ -3,7 +3,8 @@ if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
-vim.opt.fileencodings = "iso-2022-jp,sjis,euc-jp,utf-8"
+-- vim.opt.fileencodings = "iso-2022-jp,sjis,euc-jp,utf-8"
+vim.opt.fileencodings = "utf-8"
 vim.opt.fileformats = "unix,dos,mac"
 
 vim.opt.title = true
