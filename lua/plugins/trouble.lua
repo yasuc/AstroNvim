@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
   "folke/trouble.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons", "folke/todo-comments.nvim" },
@@ -10,4 +11,3 @@ return {
     { "<leader>xt", "<cmd>TodoTrouble<CR>", desc = "Open todos in trouble" },
   },
 }
-

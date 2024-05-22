@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- noice.nvim
 return {
   -- Highly experimental plugin that completely replaces the UI for messages, cmdline and the popupmenu.

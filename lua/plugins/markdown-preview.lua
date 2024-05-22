@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- Markdown preview
 return {
   "iamcco/markdown-preview.nvim",
