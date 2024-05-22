@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.indent.indent-blankline-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.code-runner.compiler-nvim" },
   -- { import = "astrocommunity.editing-support.chatgpt-nvim" },
   -- { import = "astrocommunity.utility.noice-nvim" },
   -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
