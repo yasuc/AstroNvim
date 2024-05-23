@@ -21,7 +21,7 @@ return {
         -- Uses shell commands
         external = {
           markdown = "glow %",
-          python = "python3 %",
+          python = "python %",
           go = "go run %",
           sh = "sh %",
           c = "gcc -o $fileBase %",
