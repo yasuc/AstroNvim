@@ -20,16 +20,6 @@ local keymap = vim.keymap -- for conciseness
 
 -- General Keymaps -------------------
 
--- clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
-
--- ESC*2 でハイライトやめる
-keymap.set("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", { desc = "Stop highlight" })
-
--- 文字コードの変更
-keymap.set("n", "<leader>mu", ":e ++enc=utf-8<Return>", { desc = "convert to utf-8" })
-keymap.set("n", "<leader>ms", ":e ++enc=sjis<Return>", { desc = "convert to sjis" })
-
 -- Insert --
 -- Press jk fast to exit insert mode
 keymap.set("i", "jk", "<ESC>", opts)
@@ -42,6 +32,19 @@ keymap.set("i", "<C-P>", "<Up>", opts)
 keymap.set("i", "<C-B>", "<Left>", opts)
 keymap.set("i", "<C-F>", "<Right>", opts)
 
+-- clear search highlights
+keymap.set("n", "<leader>nh", ":nohl<CR>", { silent = true, desc = "Clear search highlights" })
+
+-- ESC*2 でハイライトやめる
+keymap.set("n", "<Esc><Esc>", ":<C-u>set nohlsearch<Return>", { silent = true, desc = "Stop highlight" })
+
+-- 文字コードの変更
+keymap.set("n", "<leader>mu", ":e ++enc=utf-8<Return>", { silent = true, desc = "convert to utf-8" })
+keymap.set("n", "<leader>ms", ":e ++enc=sjis<Return>", { silent = true, desc = "convert to sjis" })
+
+-- Jaqによる実行
+keymap.set("n", ",r", ":Jaq quickfix<Return>", { silent = true, desc = "Jaq quickfix" })
+
 -- Telescope-file-browser
-keymap.set("n", ",ff", ":Telescope find_files<Return>", opts)
-keymap.set("n", ",fg", ":Telescope live_grep<Return>", opts)
+keymap.set("n", ",ff", ":Telescope find_files<Return>", { silent = true, desc = "Telescope find_files" })
+keymap.set("n", ",fg", ":Telescope live_grep<Return>", { silent = true, desc = "Telescope live_grep" })

@@ -1,3 +1,11 @@
+local path_delimiter = function()
+  if vim.fn.has "win32" or vim.fn.has "win64" then
+    return ".\\"
+  else
+    return "./"
+  end
+end
+
 return {
   "is0n/jaq-nvim",
   --  event = "VeryLazy",
@@ -16,13 +24,13 @@ return {
           python = "python3 %",
           go = "go run %",
           sh = "sh %",
-          c = "gcc -o $fileBase % && $fileBase",
+          c = "gcc -o $fileBase %",
         },
       },
 
       behavior = {
         -- Default type
-        default = "float",
+        default = "quickfix",
 
         -- Start in insert mode
         startinsert = false,
