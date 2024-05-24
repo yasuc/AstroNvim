@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
   "ray-x/web-tools.nvim",
   name = "web-tools", -- Only needed if you have another plugin named markdown.nvim

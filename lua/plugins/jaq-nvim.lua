@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 local path_delimiter = function()
   if vim.fn.has "win32" or vim.fn.has "win64" then
     return ".\\"

@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
   "arminveres/md-pdf.nvim",
   branch = "main", -- you can assume that main is somewhat stable until releases will be made
