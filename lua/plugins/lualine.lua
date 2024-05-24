@@ -54,7 +54,7 @@ return {
           lsp_names,
           { "encoding" },
           { "fileformat" },
-          -- { "filetype" },
+          { "filetype" },
           {
             source = function()
               local gitsigns = vim.b.gitsigns_status_dict
