@@ -20,6 +20,5 @@ return {
   { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
-  { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   -- import/override with your plugins folder
 }
