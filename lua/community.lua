@@ -21,12 +21,5 @@ return {
   { import = "astrocommunity.code-runner.compiler-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
-  -- { import = "astrocommunity.indent.indent-blankline-nvim" },
-  -- { import = "astrocommunity.color.transparent-nvim" },
-  -- { import = "astrocommunity.editing-support.chatgpt-nvim" },
-  -- { import = "astrocommunity.utility.noice-nvim" },
-  -- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
-  -- { import = "astrocommunity.recipes.vscode-icons" },
-  -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- import/override with your plugins folder
 }
