@@ -31,7 +31,7 @@ return {
       i = {
         -- Insert --
         -- Press jk fast to exit insert mode
-        ["jk"] = { "<ESC>", noremap = true, silent = true },
+        -- ["jk"] = { "<ESC>", noremap = true, silent = true },
 
         -- insert mode での移動
         ["<C-E>"] = { "<END>", noremap = true, silent = true },
