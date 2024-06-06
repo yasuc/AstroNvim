@@ -1,3 +1,5 @@
+if vim.g.goneovim then vim.o.guifont = "Moralerspace Argon HWNF:h14" end
+
 if vim.g.neovide then
   ---- ディスプレイの設定
   -- フォントの設定
