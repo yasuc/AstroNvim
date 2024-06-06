@@ -47,7 +47,7 @@ return {
         -- this is useful for naming menus
         --
         -- for Aerial
-        ["<Leader>a"] = { desc = "Aerial" },
+        ["<Leader>a"] = { desc = " Aerial" },
         ["<Leader>at"] = { "<cmd>AerialToggle!<CR>", silent = true, desc = "Aerial Toggle" },
         ["<Leader>an"] = { "<cmd>AerialNavToggle<CR>", silent = true, desc = "Aerial Nav Toggle" },
         ["<Leader>af"] = { "<cmd>AerialToggle! float<CR>", silent = true, desc = "Aerial Toggle" },
@@ -58,7 +58,7 @@ return {
         ["<Esc><Esc>"] = { ":<C-u>set nohlsearch<Return>", silent = true, desc = "Stop highlight" },
 
         -- 文字コードの変更
-        ["<Leader>m"] = { desc = "Convert char code" },
+        ["<Leader>m"] = { desc = " Convert char code" },
         ["<leader>mu"] = { ":e ++enc=utf-8<Return>", silent = true, desc = "convert to utf-8" },
         ["<leader>ms"] = { ":e ++enc=sjis<Return>", silent = true, desc = "convert to sjis" },
 
