@@ -47,7 +47,7 @@ return {
         -- this is useful for naming menus
         --
         -- for Aerial
-        ["<Leader>a"] = { desc = " Aerial" },
+        ["<Leader>a"] = { desc = "󰠶 Aerial" },
         ["<Leader>at"] = { "<cmd>AerialToggle!<CR>", silent = true, desc = "Aerial Toggle" },
         ["<Leader>an"] = { "<cmd>AerialNavToggle<CR>", silent = true, desc = "Aerial Nav Toggle" },
         ["<Leader>af"] = { "<cmd>AerialToggle! float<CR>", silent = true, desc = "Aerial Toggle" },
