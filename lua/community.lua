@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.editing-support.dial-nvim" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
@@ -23,6 +24,6 @@ return {
   { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
-  { import = "astrocommunity.scrolling.nvim-scrollbar" },
+  { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   -- import/override with your plugins folder
 }
