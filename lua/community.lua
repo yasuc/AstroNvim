@@ -21,6 +21,8 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.rainbow-delimiter-indent-blankline" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
   -- import/override with your plugins folder
 }
