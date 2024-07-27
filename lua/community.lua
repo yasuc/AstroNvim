@@ -13,6 +13,8 @@ return {
   { import = "astrocommunity.debugging.nvim-bqf" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.dial-nvim" },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.editing-support.text-case-nvim" },
   { import = "astrocommunity.lsp.nvim-lsp-endhints" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
