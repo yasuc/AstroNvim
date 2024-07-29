@@ -12,7 +12,7 @@ local keymap = vim.keymap
 --Remap space as leader key
 keymap.set("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- vim.g.maplocalleader = " "
 
 keymap.set("n", "x", '"_x')
 
@@ -56,13 +56,9 @@ keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
 -- Diagnostics
-keymap.set("n", "<C-d>", function()
-	vim.diagnostic.goto_next()
-end, opts)
+keymap.set("n", "<C-d>", function() vim.diagnostic.goto_next() end, opts)
 
-keymap.set("n", "<leader>r", function()
-	require("craftzdog.utils").replaceHexWithHSL()
-end)
+keymap.set("n", "<leader>r", function() require("craftzdog.utils").replaceHexWithHSL() end)
 
 -- Normal --
 -- Better window navigation

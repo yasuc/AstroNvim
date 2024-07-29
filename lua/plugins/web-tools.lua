@@ -1,13 +1,14 @@
 if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
-  "ray-x/web-tools.nvim",
-  name = "web-tools", -- Only needed if you have another plugin named markdown.nvim
-  config = function()
-    require("web-tools").setup {
-      keymaps = {
-        rename = nil, -- by default use same setup of lspconfig
-        repeat_rename = "_", -- . to repeat
-      },
-    }
-  end,
+  {
+    "ray-x/web-tools.nvim",
+    config = function()
+      require("hlchunk").setup {
+        keymaps = {
+          rename = nil, -- by default use same setup of lspconfig
+          repeat_rename = ".", -- . to repeat
+        },
+      }
+    end,
+  },
 }
