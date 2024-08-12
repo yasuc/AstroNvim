@@ -17,5 +17,19 @@ return { -- override nvim-cmp plugin
       { name = "path", priority = 250 },
       { name = "emoji", priority = 700 }, -- add new source
     }
+
+    -- opts.mapping = cmp.mapping.preset.insert {
+    --   ["CR"] = cmp.mapping.confirm { select = true },
+    --   ["<Tab>"] = cmp.mapping(function(fallback)
+    --     if cmp.visible() then
+    --       local entries = cmp.get_entries()
+    --       cmp.select_next_item { behavior = cmp.SelectBehavior.Select }
+    --
+    --       if #entries == 1 then cmp.confirm() end
+    --     else
+    --       fallback()
+    --     end
+    --   end, { "i", "s" }),
+    -- }
   end,
 }
