@@ -33,6 +33,9 @@ vim.keymap.set(
   { silent = true, noremap = true, desc = "toggle signature" }
 )
 
+vim.keymap.set({ "n" }, "<Space>T", ":ToggleTerm size=10<CR>", { silent = true })
+vim.keymap.set({ "t" }, "<ESC>", [[<C-\><C-n>]], { silent = true })
+
 if vim.fn.has "wsl" == 1 then
   if vim.fn.executable "wl-copy" == 0 then
     print "wl-clipboard not found, clipboard integration won't work"
