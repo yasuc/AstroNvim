@@ -67,7 +67,7 @@ return {
           desc = "toggle signature",
         },
 
-        ["<Leader>m"] = { desc = " Markdown" },
+        ["<Leader>m"] = { desc = " Markdown" },
         ["<leader>mp"] = {
           "<cmd>MarkdownPreviewToggle<cr>",
           desc = "Markdown Preview",
