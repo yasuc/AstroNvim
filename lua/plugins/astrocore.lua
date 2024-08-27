@@ -27,6 +27,7 @@ return {
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
+
       -- first key is the mode
       i = {
         -- Insert --
@@ -52,15 +53,38 @@ return {
         ["<Leader>an"] = { "<cmd>AerialNavToggle<CR>", silent = true, desc = "Aerial Nav Toggle" },
         ["<Leader>af"] = { "<cmd>AerialToggle! float<CR>", silent = true, desc = "Aerial Toggle" },
 
+        -- for lsp_signature
+        ["<C-k>"] = {
+          function() require("lsp_signature").toggle_float_win() end,
+          silent = true,
+          noremap = true,
+          desc = "toggle signature",
+        },
+        ["<Leader>k"] = {
+          function() vim.lsp.buf.signature_help() end,
+          silent = true,
+          noremap = true,
+          desc = "toggle signature",
+        },
+
+        ["<Leader>m"] = { desc = " Markdown" },
+        ["<leader>mp"] = {
+          "<cmd>MarkdownPreviewToggle<cr>",
+          desc = "Markdown Preview",
+        },
+
+        -- for ToggleTerm
+        ["<Space>,"] = { ":ToggleTerm size=10<CR>", silent = true },
+
         -- clear search highlights
         ["<leader>nh"] = { ":nohl<CR>", silent = true, desc = "Clear search highlights" },
         -- ESC*2 でハイライトやめる
         ["<Esc><Esc>"] = { ":<C-u>set nohlsearch<Return>", silent = true, desc = "Stop highlight" },
 
         -- 文字コードの変更
-        ["<Leader>m"] = { desc = " Convert char code" },
-        ["<leader>mu"] = { ":e ++enc=utf-8<Return>", silent = true, desc = "convert to utf-8" },
-        ["<leader>ms"] = { ":e ++enc=sjis<Return>", silent = true, desc = "convert to sjis" },
+        ["<Leader>U"] = { desc = " Convert char code" },
+        ["<leader>Uu"] = { ":e ++enc=utf-8<Return>", silent = true, desc = "convert to utf-8" },
+        ["<leader>Us"] = { ":e ++enc=sjis<Return>", silent = true, desc = "convert to sjis" },
 
         -- Jaqによる実行
         [",r"] = { ":Jaq quickfix<Return>", silent = true, desc = "Jaq quickfix" },
@@ -72,6 +96,7 @@ return {
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
+        ["<ESC>"] = { [[<C-\><C-n>]], silent = true },
       },
     },
   },
