@@ -36,7 +36,7 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.zig" },
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
+  -- { import = "astrocommunity.programming-language-support.rest-nvim" },
   { import = "astrocommunity.programming-language-support.web-tools-nvim" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
