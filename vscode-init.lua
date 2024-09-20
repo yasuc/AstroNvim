@@ -18,4 +18,4 @@
 -- require "lazy_setup"
 -- require "polish"
 require "config.options"
-require "config.keymaps"
+-- require "config.keymaps"
