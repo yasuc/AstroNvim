@@ -1,3 +1,4 @@
+if false then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- emmet parserの実装
 local lpeg = vim.lpeg
 local name = (lpeg.P(1) - lpeg.S "#.[>") ^ 1
