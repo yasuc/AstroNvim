@@ -1,3 +1,4 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 if vim.fn.has "wsl" == 1 then
   if vim.fn.executable "wl-copy" == 0 then
     print "wl-clipboard not found, clipboard integration won't work"
