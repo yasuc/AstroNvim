@@ -28,3 +28,5 @@ vim.opt.inccommand = "split"
 vim.opt.breakindent = true
 vim.opt.path:append { "**" } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { "*/node_modules/*" }
+
+vim.g.python3_host_prog = "/home/yasuc/.pyenv/shims/python3"
