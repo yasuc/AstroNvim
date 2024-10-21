@@ -96,6 +96,8 @@ return {
 
         -- rest-nvim
         ["<Leader>rn"] = { ":Rest run<space>", desc = "Run request name" },
+        ["<Leader>rhn"] = { ":hor Rest run<space>", desc = "Horizontal Run request name" },
+        ["<Leader>rhr"] = { ":hor Rest run<Return>", desc = "Horizontal Run request under the cursor" },
       },
       t = {
         -- setting a mapping to false will disable it
