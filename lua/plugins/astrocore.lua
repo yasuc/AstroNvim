@@ -75,6 +75,7 @@ return {
 
         -- for ToggleTerm
         ["<Space>,"] = { ":ToggleTerm size=10<CR>", silent = true },
+        ["<Space>."] = { ":ToggleTerm direction=vertical size=80<CR>", silent = true },
 
         -- clear search highlights
         ["<leader>nh"] = { ":nohl<CR>", silent = true, desc = "Clear search highlights" },
@@ -92,6 +93,9 @@ return {
         -- Telescope-file-browser
         [",ff"] = { ":Telescope find_files<Return>", silent = true, desc = "Telescope find_files" },
         [",fg"] = { ":Telescope live_grep<Return>", silent = true, desc = "Telescope live_grep" },
+
+        -- rest-nvim
+        ["<Leader>rn"] = { ":Rest run<space>", desc = "Run request name" },
       },
       t = {
         -- setting a mapping to false will disable it
