@@ -67,11 +67,11 @@ return {
           desc = "toggle signature",
         },
 
-        ["<Leader>m"] = { desc = " Markdown" },
-        ["<leader>mp"] = {
-          "<cmd>MarkdownPreviewToggle<cr>",
-          desc = "Markdown Preview",
-        },
+        -- ["<Leader>m"] = { desc = " Markdown" },
+        -- ["<leader>mp"] = {
+        --   "<cmd>MarkdownPreviewToggle<cr>",
+        --   desc = "Markdown Preview",
+        -- },
 
         -- for ToggleTerm
         ["<Space>,"] = { ":ToggleTerm size=10<CR>", silent = true },
