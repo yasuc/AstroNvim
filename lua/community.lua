@@ -24,6 +24,7 @@ return {
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   -- { import = "astrocommunity.markdown-and-latex.peek-nvim" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+  -- { import = "astrocommunity.markdown-and-latex.markview-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.nvim-surround" },
