@@ -7,7 +7,7 @@ return {
     {
       "<leader>M,",
       function() require("md-pdf").convert_md_to_pdf() end,
-      desc = "Markdown preview",
+      desc = "Markdown to PDF",
     },
   },
   opts = {
